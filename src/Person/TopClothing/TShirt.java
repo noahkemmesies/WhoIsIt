@@ -1,3 +1,7 @@
+package Person.TopClothing;
+
+import Person.TopClothing.TopClothing;
+
 import java.awt.*;
 
 public class TShirt extends TopClothing {

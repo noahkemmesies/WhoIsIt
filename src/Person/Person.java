@@ -1,20 +1,23 @@
+package Person;
+
+import Person.Head.*;
+import Person.TopClothing.*;
+import Person.BottomClothing.*;
+
 import java.awt.*;
 import java.util.ArrayList;
-import java.util.Map;
 
-public class Person<T extends TopClothing, S extends BottomClothing, Y extends Headgear> {
+public class Person<T extends TopClothing, S extends BottomClothing> {
     private final char gender; //m, f, d
-    private final Hair hair;
+    private final Head head;
     private final T topClothing;
     private final S bottomClothing;
-    private final Y headgear;
 
-    public Person(char gender, Hair hair, T topClothing, S bottomClothing, Y headgear) {
+    public Person(char gender, Head head, T topClothing, S bottomClothing) {
         this.gender = gender;
-        this.hair = hair;
+        this.head = head;
         this.topClothing = topClothing;
         this.bottomClothing = bottomClothing;
-        this.headgear = headgear;
     }
 
 
@@ -22,8 +25,8 @@ public class Person<T extends TopClothing, S extends BottomClothing, Y extends H
         return gender;
     }
 
-    public Hair getHair() {
-        return hair;
+    public Head getHead() {
+        return head;
     }
 
     public TopClothing getTopClothing() {
@@ -34,25 +37,22 @@ public class Person<T extends TopClothing, S extends BottomClothing, Y extends H
         return bottomClothing;
     }
 
-    public Headgear getHeadgear() {
-        return headgear;
-    }
-
-    public boolean comparePerson(Person anotherP) { //Update with nem Types
-        return compareGender(anotherP) && compareHair(anotherP) && compareTopClothing(anotherP) && compareBottomClothing(anotherP) && compareHeadgear(anotherP);
+    public boolean compareTo(Person anotherP) { //Update with nem Types
+        return compareGender(anotherP) && compareHead(anotherP) && compareTopClothing(anotherP) && compareBottomClothing(anotherP);
     }
 
     public boolean compareGender(Person anotherP) {
         return getGender() == anotherP.getGender(); //could use Variables directly
     }
 
-    public boolean compareHair(Person anotherP) {
-        return getHair().getColor() == anotherP.getHair().getColor() && getHair().getLength().equals(anotherP.getHair().getLength()) && getHair().getStyle().equals(anotherP.getHair().getStyle());
+    public boolean compareHead(Person anotherP) {
+        return getHead().compareTo(anotherP.getHead());
     }
 
     public boolean compareTopClothing(Person anotherP) {
-        return getTopClothing().getColor() == anotherP.getTopClothing().getColor(); // check TopClothing Type
+        return getTopClothing().getColor() == anotherP.getTopClothing().getColor(); // check Person.TopClothing.TopClothing Type
     }
+
     public boolean compareBottomClothing(Person anotherP) {
         boolean equal;
         equal = getBottomClothing().getColor() == anotherP.getBottomClothing().getColor();
@@ -61,28 +61,26 @@ public class Person<T extends TopClothing, S extends BottomClothing, Y extends H
         equal = equal && true;
         return equal;
     }
-    public boolean compareHeadgear(Person anotherP) {
-        return getHeadgear().getColor() == anotherP.getHeadgear().getColor(); // check Headgear Type
-    }
 
 
     private static Person generateRandomPerson() { //Update with nem Types
         //randomize inPut
-        return new Person(generateRandomGender(), Hair.generateRandomHair(), TopClothing.generateRandomTopClothing(), BottomClothing.generateRandomBottomClothing(), Headgear.generateRandomHeadgear());
+        return new Person(generateRandomGender(), Head.generateRandomHead(), TopClothing.generateRandomTopClothing(), BottomClothing.generateRandomBottomClothing());
     }
 
     public static Person generateRandomPerson(ArrayList<Person> excludedPersons) {
         Person newP;
-        boolean equal = false;
+        boolean equal;
         do {
+            equal = false;
             newP = generateRandomPerson();
             for (Person p: excludedPersons) {
-                if (newP.comparePerson(p)) {
+                if (newP.compareTo(p)) {
                     equal = true;
                     break;
                 }
             }
-        } while (!equal);
+        } while (equal);
         return newP;
     }
 

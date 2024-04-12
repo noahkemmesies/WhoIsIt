@@ -1,3 +1,7 @@
+package Person.Head;
+
+import Person.Person;
+
 import java.awt.*;
 
 public class Hair {
@@ -23,6 +27,11 @@ public class Hair {
     public String getStyle() {
         return style;
     }
+
+    public boolean compareTo(Hair anotherH) {
+        return getColor() == anotherH.getColor() && getLength().equals(anotherH.getLength()) && getStyle().equals(anotherH.getStyle());
+    }
+
 
     public static Hair generateRandomHair() {
         String[] lengths = {"long", "middle", "short"};

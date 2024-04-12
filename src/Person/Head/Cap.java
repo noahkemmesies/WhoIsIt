@@ -1,3 +1,5 @@
+package Person.Head;
+
 import java.awt.*;
 
 public class Cap extends Headgear {

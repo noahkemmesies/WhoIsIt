@@ -1,3 +1,7 @@
+package Person.TopClothing;
+
+import Person.Person;
+
 import java.awt.*;
 
 public class TopClothing {

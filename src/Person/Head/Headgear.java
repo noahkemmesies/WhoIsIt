@@ -1,3 +1,7 @@
+package Person.Head;
+
+import Person.Person;
+
 import java.awt.*;
 
 public class Headgear {
@@ -9,6 +13,10 @@ public class Headgear {
 
     public Color getColor() {
         return color;
+    }
+
+    public boolean compareTo(Headgear anotherH) {
+        return getColor() == anotherH.getColor(); // ! check Headgear Type
     }
 
     public static Headgear generateRandomHeadgear() {
