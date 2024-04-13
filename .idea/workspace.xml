@@ -2,26 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3d12ced-6173-4575-a8cb-d54171621647" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WhoIsIt.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Person/Head/Head.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BottomClothing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person/BottomClothing/BottomClothing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person/Head/Cap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Hair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person/Head/Hair.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Hat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person/Head/Hat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Headgear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person/Head/Headgear.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Jeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person/BottomClothing/Jeans.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Skirt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person/BottomClothing/Skirt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TShirt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person/TopClothing/TShirt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Top.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person/TopClothing/Top.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TopClothing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person/TopClothing/TopClothing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WhoIsIt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WhoIsIt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +72,14 @@
       <option name="project" value="LOCAL" />
       <updated>1712413389676</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Refactored Classes with a few new features">
+      <created>1712958947257</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1712958947257</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -120,6 +108,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added basic classes" />
     <MESSAGE value="Extended Person features and properties" />
-    <option name="LAST_COMMIT_MESSAGE" value="Extended Person features and properties" />
+    <MESSAGE value="Refactored Classes with a few new features" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored Classes with a few new features" />
   </component>
 </project>
